@@ -48,7 +48,132 @@
 
 
 </head>
-<body>
+<body class="bg-papaya_whip text-jet font-secondary">
+
+  <!--
+    - #Header
+  -->
+
+  <header class="header" data-header>
+    <div class="">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-light.svg" width="129" height="16" alt="cozynest" class="">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <span class="material-symbols-rounded" aria-hidden="true">close</span>
+        </button>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <button class="navbar-link">
+              Shop
+
+              <ion-icon name="caret-forward-outline" aria-hidden="true" class="duration-200"></ion-icon>
+            </button>
+
+            <div class="dropdown" data-dropdown>
+              <div class="dropdown-content">
+                <a href="" class="">All Products</a>
+                <a href="" class="">Clothing</a>
+                <a href="" class="">Candles</a>
+                <a href="" class="">Accessories</a>
+                <a href="" class="">Bags</a>
+                <a href="" class="">Clocks</a>
+                <a href="" class="">SALE 🏷️</a>
+              </div>
+            </div>
+
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#latest" class="navbar-link">Latest</a>
+          </li>
+
+          <li>
+            <a href="#info" class="navbar-link">Info</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="">
+        <button class="cart-toggler" aria-label="cart toggler" data-cart-toggler>
+          <span class="material-symbols-rounded" aria-hidden="true">shopping_cart_checkout</span>
+        </button>
+
+        <div class="">
+          <div class="cart-modal" data-cart-modal>
+            <ul>
+              <li class="">
+                <figure class="img-holder">
+                  <img src="./assets/images/cart-1.jpg" width="80" height="80" loading="lazy" alt="Handmade painted coffee mug" class="img-cover">
+                </figure>
+
+                <div class="text-wrapper">
+                  <span class="">Handmade painted coffee mug</span>
+
+                  <div class="">
+                    <p class="product-ammount">1 ×</p>
+
+                    <p class="price">$85.00</p>
+                  </div>
+                </div>
+
+                <button class="" aria-label="remove product">
+                  <span class="material-symbols-rounded" aria-hidden="true">close</span>
+                </button>
+              </li>
+
+              <div class="divider"></div>
+
+              <li class="">
+                <figure class="img-holder">
+                  <img src="./assets/images/cart-1.jpg" width="80" height="80" loading="lazy" alt="Handmade painted coffee mug" class="img-cover">
+                </figure>
+
+                <div class="text-wrapper">
+                  <span class="">Handmade painted coffee mug</span>
+
+                  <div class="">
+                    <p class="product-ammount">1 ×</p>
+
+                    <p class="price">$990.00</p>
+                  </div>
+                </div>
+
+                <button class="" aria-label="remove product">
+                  <span class="material-symbols-rounded" aria-hidden="true">close</span>
+                </button>
+              </li>
+
+              <div class="divider"></div>
+
+              <div class="">
+                <a href="#" class="btn" aria-label="checkout">checkout</a>
+
+                <a href="#" class="btn btn-text" aria-label="view cart">view cart</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <button class="" aria-label="toggle menu" data-nav-toggler>
+          <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+        </button>
+      </div>
+
+      <div class="overlay" data-overlay></div>
+    </div>
+  </header>
   
   <!--
     - ionicon link
