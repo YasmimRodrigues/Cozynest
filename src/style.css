@@ -28,3 +28,89 @@ html {
 ion-icon {
     --ionicon-stroke-width: 50px;
 }
+
+/*-------------------------*\
+  #HEADER
+\*-------------------------*/
+
+.header {
+    @apply bg-caf_noir
+    fixed
+    left-0
+    top-0
+    z-30
+    h-20
+    w-full
+    duration-200
+    ease-inExpo
+
+    /* responsive for lg:1200px screen */
+    lg:bg-transparent;
+}
+
+.header.active {
+    @apply shadow-shadowDark
+    animate-fadeInDown
+
+    /* responsive for lg:1200px screen */
+    lg:bg-caf_noir;
+}
+
+.header .container {
+    /* responsive for lg:1200px screen */
+    @apply lg:mx-0
+    lg:w-2/4
+    lg:max-w-[calc(100%_-_600px)]
+    lg:py-7
+    lg:px-7
+
+    /* responsive for lg:1400px screen */
+    xl:w-full
+    xl:max-w-[calc(100%_-_666px)]
+
+    /* responsive for lg:1600px screen */
+    xxl:grid
+    xxl:grid-cols-3
+    xxl:mx-auto
+    xxl:max-w-[1650px];
+}
+
+.navbar {
+    @apply bg-licorice
+    fixed
+    right-0
+    top-0
+    z-50
+    h-screen
+    w-80
+    translate-x-80
+    pt-20
+    duration-200
+    ease-inExpo
+    invisible;
+}
+
+@media (min-width: 1000px) {
+    .navbar {
+        all:unset;
+    }
+}
+
+.navbar.active {
+    @apply visible
+    translate-x-0;
+}
+
+.nav-close-btn {
+    @apply text-alabaster
+    absolute
+    top-5
+    right-3
+    grid
+    place-items-center
+    text-[28px]
+    h-10
+    w-10
+
+    
+}
