@@ -30,6 +30,71 @@ ion-icon {
 }
 
 /*-------------------------*\
+  #COMPONENTS
+\*-------------------------*/
+
+/**
+ * Dropdown
+ */
+
+.dropdown {
+    @apply relative;
+}
+
+.dropdown-content {
+    @apply text-alabaster
+    border-amber_alpha
+    border-solid
+    border-b
+    h-0
+    px-5
+    space-y-1
+    text-sm
+    transition-all
+    duration-200
+    ease-inExpo
+    invisible
+
+    /* responsive for md:1000px screen */
+    md:bg-papaya_whip
+    md:text-jet
+    md:absolute
+    md:-left-8
+    md:top-10
+    md:min-w-[125px]
+    md:space-y-1
+    md:rounded-md
+    md:shadow-sm
+    
+    /* responsive for xxl:1600px screen */
+    xxl:text-lg
+    xxl:min-w-40;
+
+    clip-path: inset(0 0 100% 0);
+}
+
+.dropdown.active .dropdown-content {
+    @apply visible
+    h-[184px]
+
+    /* responsive for xxl:1600px screen */
+    xxl:h-60;
+
+    clip-path: inset(0 0 0 0);
+}
+
+.navbar-link:has(~ .dropdown.active) ion-icon {
+    @apply rotate-90;
+}
+
+.dropdown-content a {
+    @apply transition-colors
+
+    /* :hover */
+    hover:text-butterscotch;
+}
+
+/*-------------------------*\
   #HEADER
 \*-------------------------*/
 
@@ -112,5 +177,60 @@ ion-icon {
     h-10
     w-10
 
-    
+    /* responsive for md:1000px screen */
+    md:hidden;
+}
+
+.navbar-link {
+    @apply text-alabaster
+    border-amber_alpha
+    border-solid
+    border-b
+    px-3
+    py-5
+    font-bold
+    uppercase
+    cursor-pointer
+    transition-colors
+
+    /* :hover */
+    hover:text-butterscotch
+
+    /* responsive for md:1000px screen */
+    md:border-b-0
+    md:p-0
+
+    /* responsive for md:1600px screen */
+    xxl:text-xl;
+}
+
+/**
+ * cart
+ */
+
+.cart-toggler {
+    @apply relative
+    grid
+    h-10
+    w-10
+    place-items-center
+    rounded-full
+
+    /* ::before */
+
+    before:text-papaya_whip
+    before:bg-red
+    before:content-['2']
+    before:absolute
+    before:right-0
+    before:top-0
+    before:z-10
+    before:h-5
+    before:w-5
+    before:rounded-full
+    before:text-sm
+    before:font-semibold
+
+    /* responsive for lg:1200px screen*/
+    lg:bg-caf_noir;
 }

@@ -65,13 +65,13 @@
           <span class="material-symbols-rounded" aria-hidden="true">close</span>
         </button>
 
-        <ul class="navbar-list">
+        <ul class="md:flex md:items-center md:gap-3 xl:gap-7">
           <li>
             <a href="#home" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <button class="navbar-link">
+            <button class="navbar-link flex items-center gap-2 min-w-full" aria-label="shop" data-dropdown-toggler>
               Shop
 
               <ion-icon name="caret-forward-outline" aria-hidden="true" class="duration-200"></ion-icon>
@@ -79,13 +79,13 @@
 
             <div class="dropdown" data-dropdown>
               <div class="dropdown-content">
-                <a href="" class="">All Products</a>
+                <a href="" class="pt-2">All Products</a>
                 <a href="" class="">Clothing</a>
                 <a href="" class="">Candles</a>
                 <a href="" class="">Accessories</a>
                 <a href="" class="">Bags</a>
                 <a href="" class="">Clocks</a>
-                <a href="" class="">SALE 🏷️</a>
+                <a href="" class="pb-2">SALE 🏷️</a>
               </div>
             </div>
 
@@ -105,12 +105,12 @@
         </ul>
       </nav>
 
-      <div class="">
+      <div class="rounded-md overflow-hidden flex items-center gap-3 lg:fixed lg:top-5 lg:right-5">
         <button class="cart-toggler" aria-label="cart toggler" data-cart-toggler>
           <span class="material-symbols-rounded" aria-hidden="true">shopping_cart_checkout</span>
         </button>
 
-        <div class="">
+        <div class="relative">
           <div class="cart-modal" data-cart-modal>
             <ul>
               <li class="">
