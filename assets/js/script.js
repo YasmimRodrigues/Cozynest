@@ -38,3 +38,15 @@ const toggleElem = function (elem) {
 $dropdownToggler.addEventListener('click', function () {
     toggleElem($dropdown);
 });
+
+// toggle a cart
+$cartToggler.addEventListener('click', function () {
+    toggleElem($cartModal);
+});
+
+// header active when windows scrollY 50px
+const activeHeader = function () {
+    window.scrollY > 50 ? $header.classList.add('active') : $header.classList.remove('active');
+}
+
+window.addEventListener('scroll', activeHeader);
