@@ -303,3 +303,19 @@ ion-icon {
 .cart-modal .material-symbols-rounded {
     font-variation-settings: "opsz" 20;
 }
+
+.overlay {
+    @apply fixed
+    inset-0
+    z-40
+    ease-inExpo
+    duration-75
+    invisible
+    opacity-0;
+}
+
+.overlay.active {
+    @apply visible
+    opacity-100
+    backdrop-blur-sm;
+}
