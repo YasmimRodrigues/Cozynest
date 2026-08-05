@@ -211,6 +211,21 @@ ion-icon {
     @apply left-[calc((260px_+_20px)_*_8)];
 }
 
+/**
+ * Arrow button
+ */
+
+.arrow-button {
+    @apply h-10
+    w-10
+    grid
+    place-items-center
+    border
+    border-solid
+    border-butterscotch
+    rounded-sm;
+}
+
 /*-------------------------*\
   #HEADER
 \*-------------------------*/
