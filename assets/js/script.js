@@ -69,6 +69,30 @@ function sliderInitial($sliderContainer) {
         $slider.prepend($slider.lastElementChild);
     }
     $prevBtn.addEventListener('click', prevSlide);
+
+    let autoSlideIntervalId;
+
+    function autoSlide() {
+        autoSlideIntervalId = setInterval(function () {
+            nextSlide();
+        }, 2000);
+    }
+
+    autoSlide();
+
+    function deleteAutoSliding() {
+        clearInterval(autoSlideIntervalId);
+    }
+
+    // Stop auto sliding when mouseover
+    $slider.addEventListener('mouseover', deleteAutoSliding);
+    $prevBtn.addEventListener('mouseover', deleteAutoSliding);
+    $nextBtn.addEventListener('mouseover', deleteAutoSliding);
+
+    // Resume auto sliding when mouseout
+    $slider.addEventListener('mouseout', autoSlide);
+    $prevBtn.addEventListener('mouseout', autoSlide);
+    $nextBtn.addEventListener('mouseout', autoSlide);
 }
 
 for (let i = 0; i < $sliderContainers.length; i++) {
