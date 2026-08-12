@@ -40,31 +40,11 @@ ion-icon {
     object-cover;
 }
 
-/**
- * Button
- */
+.grid-list > li:nth-child(even):not(.off-card) {
+    @apply ms-auto
 
-.btn {
-    @apply text-white
-    font-bold
-    uppercase
-    tracking-widest
-    text-sm
-    max-w-max
-    rounded-md
-    duration-200
-
-    /* :hover */
-    hover:shadow-lg;
-}
-
-.btn-text {
-    @apply text-caf_noir
-    ring-butterscotch
-    ring-1
-
-    /* :hover */
-    hover:shadow-lg;
+    /* responsive for sm:635px screen */
+    sm:ms-0;
 }
 
 /*-------------------------*\
@@ -130,6 +110,33 @@ ion-icon {
 
     /* :hover */
     hover:text-butterscotch;
+}
+
+/**
+ * Button
+ */
+
+.btn {
+    @apply text-white
+    font-bold
+    uppercase
+    tracking-widest
+    text-sm
+    max-w-max
+    rounded-md
+    duration-200
+
+    /* :hover */
+    hover:shadow-lg;
+}
+
+.btn-text {
+    @apply text-caf_noir
+    ring-butterscotch
+    ring-1
+
+    /* :hover */
+    hover:shadow-lg;
 }
 
 /**
