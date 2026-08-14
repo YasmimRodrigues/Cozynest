@@ -233,6 +233,17 @@ ion-icon {
     rounded-sm;
 }
 
+/**
+ *
+ */
+
+.avatar {
+    @apply w-12
+    h-12
+    rounded-full
+    shrink-0;
+}
+
 /*-------------------------*\
   #HEADER
 \*-------------------------*/
@@ -464,4 +475,42 @@ ion-icon {
     min-w-32
     rounded-md
     cursor-pointer;
+}
+
+/*-------------------------*\
+  #TESTIMONIALS
+\*-------------------------*/
+
+.testimonial-card:nth-child(1) {
+    @apply left-[calc(-450px_+_-20px)]
+
+    /* response for sm:635px screen*/
+    sm:left-[calc(-580px_+_-30px)]
+
+    /* response for md:1000px screen*/
+    md:left-[calc(-756px_+_-30px)];
+}
+
+.testimonial-card:nth-child(2) {
+    @apply left-0
+}
+
+.testimonial-card:nth-child(3) {
+    @apply left-[calc(450px_+_20px)]
+
+    /* response for sm:635px screen*/
+    sm:left-[calc(580px_+_30px)]
+
+    /* response for md:1000px screen*/
+    md:left-[calc(756px_+_30px)];
+}
+
+.testimonial-card:nth-child(4) {
+    @apply left-[calc((450px_+_20px)_*_2)]
+
+    /* response for sm:635px screen*/
+    sm:left-[calc((580px_+_30px)_*_2)]
+
+    /* response for md:1000px screen*/
+    md:left-[calc((756px_+_30px)_*_2)];
 }
